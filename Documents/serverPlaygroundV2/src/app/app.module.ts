@@ -10,13 +10,15 @@ import { ServerComponent } from './component/server/server.component';
 import {AppRoutingModule} from './app.routing';
 import { CreateServerComponent } from './component/create-server/create-server.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditServerComponent } from './component/edit-server/edit-server.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     ServersComponent,
     ServerComponent,
-    CreateServerComponent
+    CreateServerComponent,
+    EditServerComponent
   ],
   imports: [
     BrowserModule,
