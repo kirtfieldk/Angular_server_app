@@ -12,7 +12,6 @@ export class ServersComponent implements OnInit {
   constructor(public serversService: ServersService) { }
 
   ngOnInit(): void {
-    
     this.servers = this.serversService.servers;
   }
 

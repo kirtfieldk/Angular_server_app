@@ -1,4 +1,4 @@
-<div (ngSubmit)="addServer()">
+<div >
     <div>
         <label for="serverName">Server Name</label>
         <input type="text" class="form-control " name="Server Name" id="serverName" required #serverName="ngModel" [(ngModel)]="serverToAdd.name">
@@ -9,8 +9,8 @@
         <label for="serverRegion">Server Name</label>
         <input type="text" class="form-control " name="Server Region" id="serverRegion" required #serverRegion="ngModel" [(ngModel)]="serverToAdd.region">
     </div>
-    <div CLASS=" float-end">
-        <button type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
+    <div class=" float-end">
+        <button (click)="addServer()" type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
     </div>
 
 

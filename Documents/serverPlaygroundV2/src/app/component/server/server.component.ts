@@ -17,4 +17,7 @@ export class ServerComponent implements OnInit {
       this.server = this.serversService.servers.filter(server => server.id === el.id)[0];
     })
   }
+  delete(id:string):void{
+    this.serversService.removeServer(id);
+  }
   }
