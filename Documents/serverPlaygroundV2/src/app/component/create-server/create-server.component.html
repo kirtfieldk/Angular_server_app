@@ -1,0 +1,17 @@
+<div (ngSubmit)="addServer()">
+    <div>
+        <label for="serverName">Server Name</label>
+        <input type="text" class="form-control " name="Server Name" id="serverName" required #serverName="ngModel" [(ngModel)]="serverToAdd.name">
+        <br>
+        <label for="serverId">Server Id</label>
+        <input type="text" class="form-control " name="Server Id" id="serverId" required #serverId="ngModel" [(ngModel)]="serverToAdd.id">
+        <br>
+        <label for="serverRegion">Server Name</label>
+        <input type="text" class="form-control " name="Server Region" id="serverRegion" required #serverRegion="ngModel" [(ngModel)]="serverToAdd.region">
+    </div>
+    <div CLASS=" float-end">
+        <button type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
+    </div>
+
+
+</div>
