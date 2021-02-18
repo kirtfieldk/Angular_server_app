@@ -1,0 +1,17 @@
+<div class="mt-5 container rounded  shadow bg-light pt-3 pb-3">
+    <div class="form-group">
+        <h3>Contact Keith Kirtfield</h3>
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="contactInfo.name"/>
+        <hr>
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" [(ngModel)]="contactInfo.email"/>
+        <hr>
+        <label for="msg">Message</label>
+        <input type="text" class="form-control" id="msg" [(ngModel)]="contactInfo.msg"/>
+        <div class="d-flex flex-row-reverse">
+            <button class="btn right btn-primary mt-3">Contact!</button>
+        </div>
+    </div>
+    
+</div>

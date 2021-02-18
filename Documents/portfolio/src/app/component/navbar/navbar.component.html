@@ -1,0 +1,40 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="row w-100">
+            <div class="col-7">
+                <h3>Keith Kirtfield</h3>
+                <div class="mt-n2">Software Developer</div>
+            </div>
+            <div class="col-5 container ">
+                <div class="row">
+                    <div class="cursor col-sm" (click)="flipOpen()">About</div>
+                    <div routerLink="/project" class="col-sm">Project</div>
+                    <div routerLink="/blogs" class="col-sm">Blog</div>
+                    <div routerLink="/contact" class="col-sm">Contact</div>
+                </div>
+            </div>
+        </div>
+      <div *ngIf="open" class="row mt-5 w-100">
+        <div class="col-4">Image</div>
+        <div class="col-7 w-100">
+            <h4>About Me...</h4>
+            <div>
+                Graduate of <b>Virginia Commonwealth University</b> C/0 2020
+            </div>
+            <div>
+               B.S Mathematics & Computer Science 
+            </div>
+            <div class="mt-3">
+                <u>
+                    Mid Atlantic Permenente Medical Group 
+                </u>
+            </div>
+            <div>
+                Software Developer Intern <span>Full-time 01/2020 - 12/2020</span>
+            </div>
+            <div>Developed internal applications to support all departments at Mid-Atlantic </div>
+
+        </div>
+      </div>
+      </div>
+  </nav>
